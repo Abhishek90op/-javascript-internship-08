@@ -1,0 +1,62 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("#hide").click(function(){  
+        $("#D2,#D3").hide(2000);  
+    }); 
+  
+    $("#show").click(function(){  
+        $("#D2,#D3").show(3000); 
+     });
+    
+     $("button").click(function(){  
+        $("#D2,#D3").toggle(1000); 
+     });        
+     $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});  
+</script>
+
+<style type="text/css">
+ #D2{background-color: gray;height: 200px;width: 400px;} 
+ #D3{background-color: rgba(255, 0, 0, 0.553);height: 200px;width: 400px;} 
+ #panel, #flip {
+
+  background-image: url(container-shipping-surcharges-1.png.webp);  
+  padding: 5px;
+  
+  background-color: #e5eecc;
+  border: solid 1px #ff0000;
+}
+
+#panel {
+  padding: 180px;
+  display: none;
+}
+
+</style>
+</head>  
+<body>  
+    
+    <div id="D2">
+        abhishek vaghasiya
+        
+    </div><hr/>
+    <div id="D3">
+        yash soni
+    </div><hr/></br>
+   
+    <div id="flip">show a picture</div>
+    <a href="https://picsum.photos/">
+    <div id="panel"></div><br></a>
+   
+<button id="hide">show</button>
+<button id="show">hide</button> </br><br>
+<button id="button">show</button> 
+
+</body>  
+</html>
